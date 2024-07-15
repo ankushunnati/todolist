@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/dashBoardFragment">
+
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.ankush.todolist.presentation.dashboard.DashBoardFragment"
+        android:label="DashBoard"
+        tools:layout="@layout/fragment_dash_board" >
+        <action
+            android:id="@+id/action_dashBoardFragment_to_editOrAddFragment"
+            app:destination="@id/editOrAddFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_viewTask"
+            app:destination="@id/viewTask" />
+    </fragment>
+    <fragment
+        android:id="@+id/editOrAddFragment"
+        android:name="com.ankush.todolist.presentation.editordelete.EditOrAddFragment"
+        android:label=""
+        tools:layout="@layout/fragment_edit_or_add" >
+        <argument
+            android:name="TaskData"
+            app:argType="com.ankush.todolist.domain.model.Task" />
+        <argument
+            android:name="isForUpdate"
+            app:argType="boolean" />
+    </fragment>
+    <dialog
+        android:id="@+id/viewTask"
+        android:name="com.ankush.todolist.presentation.viewtask.ViewTask"
+        android:label="fragment_view_task"
+        tools:layout="@layout/fragment_view_task" >
+        <argument
+            android:name="TaskData"
+            app:argType="com.ankush.todolist.domain.model.Task"
+            app:nullable="true" />
+    </dialog>
+</navigation>
