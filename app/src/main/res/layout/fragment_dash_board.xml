@@ -12,6 +12,16 @@
         tools:itemCount="5"
         tools:listitem="@layout/single_task" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_list"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:text="@string/add_task_they_ll_show_up_here"/>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floating_action_button"
         android:layout_width="wrap_content"

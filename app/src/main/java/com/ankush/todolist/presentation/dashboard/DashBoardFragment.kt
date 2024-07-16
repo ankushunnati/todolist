@@ -78,6 +78,7 @@ class DashBoardFragment : Fragment() , TaskAdapter.OnItemClickListener{
                         }
                     }
                         is Resource.Error -> {
+                            binding.emptyList.visibility = View.VISIBLE
                         }
                         is Resource.Loading -> {
                         }

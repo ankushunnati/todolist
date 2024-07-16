@@ -11,4 +11,5 @@
     <string name="title">title</string>
     <string name="due">Due</string>
     <string name="add_task">add TAsk</string>
+    <string name="add_task_they_ll_show_up_here">Add Task They\'ll Show Up Here</string>
 </resources>
