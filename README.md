@@ -11,12 +11,12 @@
      <td>Add Task</td>
   </tr>
     <tr>
-    <td>View Task</td>//Long press to View Task
+    <td>View Task(Long Press to View Task Details)</td>
      <td>Update Task</td>
   </tr>
   </tbody></table>
 
-## 💡 Tech stack & Modern Library Tools
+## 💡 Tech stack & Modern Library Tools Used
 
 <ul dir="auto">
 <li><a href="https://developer.android.com/kotlin/coroutines" rel="nofollow">Kotlin, Coroutines + Flow for asynchronous</a></li>
@@ -81,7 +81,5 @@ Your team can add new features even more quickly.
     The project is even easier to maintain.
   </li>
   </ul>
-
-## Under development
 
   
